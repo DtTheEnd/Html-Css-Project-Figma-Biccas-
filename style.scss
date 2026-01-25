@@ -703,8 +703,9 @@ header {
                 margin-bottom: 40px;
             }
             .plan_buttons_bil {
-                display: ;
-                max-width: 340px;
+                display: flex;
+                flex-direction: row;
+                max-width: 440pgx;
                 padding: 7px;
                 background-color: #FFFFFF;
                 border-radius: 10px;
