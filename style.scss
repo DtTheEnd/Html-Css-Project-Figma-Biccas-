@@ -375,6 +375,7 @@
                     padding: 15px;
                     background-color: #FFFFFF;
                     max-height: 60px;
+                    box-shadow: $main_shadow;
                 }
 
                 .oursup_card_text {
@@ -559,6 +560,7 @@
                     align-items: center;
                     max-width: 304px;
                     padding: 12px 20px;
+                    box-shadow: $main_shadow;
 
                     .img_amanda {
                         padding-right: 16px;
@@ -598,6 +600,7 @@
                 padding-right: 12px;
                 padding-bottom: 14px;
                 padding-left: 12px;
+                box-shadow: $main_shadow;
 
                 .ben_card2_container {
                     display: flex;
@@ -638,6 +641,7 @@
                 display: flex;
                 gap: 15px;
                 align-items: center;
+                box-shadow: $main_shadow;
 
                 p {
                     font-size: 18px;
@@ -685,12 +689,15 @@
                 display: flex;
                 flex-wrap: nowrap;
                 flex-shrink: 0;
-                gap: 3px;
+                gap: 1px;
                 justify-content: center;
-                padding: 7px;
+                padding: 6px; //хотя должно быть 7px
                 background-color: #FFFFFF;
                 border-radius: 10px;
                 margin-inline: auto;
+                box-shadow: $main_shadow;
+                max-width: 349px; // хотя должно быть 340px
+
 
                 button {
                     border-radius: 10px;
@@ -725,12 +732,99 @@
         .plan_cards {
             display: flex;
             flex-wrap: wrap;
+            gap: 29px;
+            justify-content: center;
+
 
             .plan_card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                max-width: 374px;
+                padding: 0 20px 25px 20px;
+                box-shadow: $main_shadow;
+                border-radius: 20px;
 
                 .pl_card_text {
                     max-width: 210px;
                     text-align: center;
+                    padding-top: 40px;
+                    padding-inline: auto;
+                    margin-bottom: 30px;
+
+                    h4 {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: $main-dark;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $main-gray;
+                        line-height: 27px;
+                        margin-bottom: 13px;
+                    }
+
+                    .dollar {
+                        position: relative;
+                        right: 20px; // Ну допустим
+                        line-height: 27px;
+                        margin-bottom: unset;
+                    }
+
+                    h3 {
+                        position: relative;
+                        left: 5px; // Ну допустим
+                        font-size: 50px;
+                        font-weight: 600;
+                        line-height: 30px;
+                    }
+
+                }
+
+                .pl_card_points {
+                    background-color: #F9FAFB;
+                    max-width: 334px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+                    padding-top: 26px;
+                    padding-left: 37px;
+                    padding-right: 31px;
+                    margin-bottom: 27px;
+
+
+                    .point_row {
+                        display: flex;
+                        gap: 10px;
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            color: $main-dark;
+                        }
+                    }
+
+                    .button_container {
+                        display: flex;
+                        justify-content: center;
+
+                        button {
+                            padding: 17px 65px;
+                            background-color: #FFFFFF;
+                            border-radius: 20px;
+                            box-shadow: $main_shadow;
+                            margin-bottom: 25px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            color: $main-green;
+
+                        }
+                    }
                 }
             }
         }
