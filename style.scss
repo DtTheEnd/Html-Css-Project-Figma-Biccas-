@@ -505,7 +505,9 @@
         display: flex;
         max-width: 1249px;
         margin-inline: auto;
-        gap: 135px;
+        // gap: 135px;
+        gap: 5px;
+        justify-content: space-between;
 
         .ben_left {
             max-width: 471px;
@@ -656,9 +658,9 @@
 // CHOOSE PLAN
 
 .plan_section {
-    padding-left: 141x;
+    padding-left: 141px;
     padding-right: 119px;
-    margin-bottom: 130px;
+    margin-bottom: 131px;
 
     .plan_container {
         max-width: 1180px;
@@ -733,7 +735,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 29px;
-            justify-content: center;
+            align-items: center;
 
 
             .plan_card {
@@ -793,7 +795,7 @@
                     padding-top: 26px;
                     padding-left: 37px;
                     padding-right: 31px;
-                    margin-bottom: 27px;
+                    border-radius: 10px;
 
 
                     .point_row {
@@ -822,11 +824,112 @@
                             font-weight: 600;
                             line-height: 30px;
                             color: $main-green;
-
                         }
                     }
                 }
             }
+
+            .card_pro {
+                background-image: url('./assets/images/background_card-pro.svg');
+                background-repeat: no-repeat;
+                padding-inline: 20px;
+                padding-bottom: 24px;
+
+                .pl_card_text {
+                    margin-bottom: 15px;
+                    max-width: 200px;
+
+                    h4,
+                    p,
+                    h3 {
+                        color: #FFFFFF;
+                    }
+
+                    h3 {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                span {
+                    display: flex;
+                    justify-content: center;
+
+                    .save50 {
+                        background-color: #85DAB9;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        color: #FFFFFF;
+                        padding: 5px 10px;
+                        max-width: 130px;
+                        margin-bottom: unset;
+                    }
+                }
+
+                .pl_card_points {
+                    background-color: #FFFFFF;
+
+                    .button_container>button {
+                        color: #FFFFFF;
+                        background-color: $main-green;
+                    }
+                }
+            }
+
+            .card_buisness>.pl_card_text {
+                max-width: 251px;
+            }
         }
+    }
+}
+
+// FOOTER
+footer {
+    background-color: #161C28;
+    padding: 130px;
+    padding-bottom: 40px;
+}
+
+.footer_section1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 170px;
+
+    .footer_review {
+        max-width: 466px;
+
+        h2 {
+            color: #FFFFFF;
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .review_direction {
+            margin-bottom: 42px;
+        }
+
+        p,
+        div>p {
+            color: $main-gray;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        .user_review {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding-left: 5px;
+        }
+
+        .ftr_img_container {
+            display: flex;
+            gap: 20px;
+        }
+
     }
 }
