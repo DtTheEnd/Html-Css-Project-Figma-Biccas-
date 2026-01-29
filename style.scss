@@ -2,6 +2,7 @@
 
 @import 'global';
 @import 'variables';
+@import 'mixins';
 
 // /* Башка */
 .header_container {
@@ -13,10 +14,7 @@
     margin-inline: auto;
 
     a .company_name {
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 30px;
-        color: $main-green;
+        @include Biccas
     }
 
     .header_nav {
@@ -930,6 +928,143 @@ footer {
             display: flex;
             gap: 20px;
         }
+    }
 
+    .start_form {
+        max-width: 612px;
+        padding: 40px 86px 66px 86px;
+        background-color: #222938;
+        border-radius: 20px;
+
+        .get_started {
+            max-width: 168px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-inline: auto;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 30px;
+                font-weight: 500;
+                color: #FFFFFF;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 10px;
+
+
+            label {
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFFFFF;
+            }
+
+            input,
+            textarea {
+                background-color: #FFFFFF;
+                border-radius: 10px;
+            }
+
+            input {
+                padding-left: 20px;
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+
+            textarea {
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 43px;
+            }
+
+            button {
+                padding: 21px 163px 20px 164px;
+                background-color: $main-green;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        span {
+            text-align: right;
+
+            p {
+                color: $main-gray;
+                font-size: 14px;
+            }
+
+            a {
+                color: #FFFFFF;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.footer_section2 {
+    // display: flex;
+    // gap: 5px;
+    justify-content: space-between;
+    max-width: 1154px;
+    padding-right: 26px;
+
+    .try_our_product {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 410px;
+
+
+        .company_name {
+            margin-bottom: 30px;
+            @include Biccas;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $main-gray;
+        }
+
+        form {
+            display: flex;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $main-gray;
+            max-width: 456px; //Вообще 410px но тут костыли с кнопкой
+            
+
+            input {
+                padding-left: 20px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                border-radius: 70px;
+                background-color: unset;
+                border-color: #D9D9D9;
+                flex-grow: 1;
+            }
+
+
+            button {
+                position: relative;
+                right: 53px;
+                justify-content: center;
+            }
+        }
+    }
+    
+    .links {
+        max-width: 587px;
     }
 }

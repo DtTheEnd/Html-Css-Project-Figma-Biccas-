@@ -1,0 +1,9 @@
+@import 'global';
+@import 'variables';
+
+@mixin Biccas {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $main-green;
+}
