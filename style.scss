@@ -81,6 +81,7 @@
     .hero_conrainer {
         margin-inline: auto;
         display: flex;
+        // flex-wrap: wrap;
         max-width: 1290px;
         gap: 35px;
 
@@ -501,6 +502,7 @@
 
     .benifit_container {
         display: flex;
+        flex-wrap: wrap;
         max-width: 1249px;
         margin-inline: auto;
         // gap: 135px;
@@ -889,8 +891,14 @@ footer {
     padding-bottom: 40px;
 }
 
-.footer_section1 {
+.footer_section {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+.footer_container1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 170px;
@@ -1010,12 +1018,13 @@ footer {
     }
 }
 
-.footer_section2 {
-    // display: flex;
+.footer_container2 {
+    display: flex;
     // gap: 5px;
     justify-content: space-between;
     max-width: 1154px;
     padding-right: 26px;
+    margin-bottom: 59px;
 
     .try_our_product {
         display: flex;
@@ -1053,6 +1062,8 @@ footer {
                 background-color: unset;
                 border-color: #D9D9D9;
                 flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 410px;
             }
 
 
@@ -1066,5 +1077,41 @@ footer {
     
     .links {
         max-width: 587px;
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
+        
+
+        h5 {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                font-size: 18px;
+                color: $main-gray;
+            }
+        }
+    }
+}
+
+.footer_container3 {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+    .dot {
+        color: $main-gray;
+        font-size: 14px;
     }
 }
