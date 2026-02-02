@@ -7,3 +7,20 @@
     line-height: 30px;
     color: $main-green;
 }
+
+@mixin green_button-hover {
+    color: black;
+    background-color: unset;
+    outline: 2px solid $main-green;
+}
+
+@mixin other_button-hover {
+    color: #FFFFFF;
+    background-color: $main-green;
+    outline: 2px solid black;
+}
+
+@mixin links {
+    color: $main-green;
+    text-decoration: underline $main-green;
+}

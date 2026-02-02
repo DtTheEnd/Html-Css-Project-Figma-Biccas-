@@ -31,7 +31,7 @@ a .company_name {
     color: $main-gray;
 
     a:hover {
-        color: $main-green;
+        @include links
     }
 }
 
@@ -55,9 +55,7 @@ a .company_name {
     }
 
     .button_log:hover {
-        max-width: 80px;
-        color: $main-green;
-        outline: 2px solid $main-green;
+        @include other_button-hover
     }
 
     .button_sign-up {
@@ -67,15 +65,11 @@ a .company_name {
     }
 
     .button_sign-up:hover {
-        max-width: 80px;
-        color: $main-gray;
-        outline: 2px solid $main-gray;
-        background-color: unset;
+        @include green_button-hover
     }
 }
 
 // /* MAIN */
-
 // /* HERO */
 .hero_section {
     padding-left: 130px;
@@ -129,9 +123,7 @@ a .company_name {
         }
 
         .button_try:hover {
-            color: $main-gray;
-            outline: 2px solid $main-gray;
-            background-color: unset;
+            @include green_button-hover
         }
 
         .button_play {
@@ -147,6 +139,7 @@ a .company_name {
 
         .button_play:hover {
             color: $main-green;
+            border-radius: 40px;
             outline: 2px solid $main-green;
         }
     }
@@ -206,6 +199,10 @@ a .company_name {
                     border-radius: 40px;
                     color: #FFFFFF;
                     background-color: $main-green;
+                }
+
+                .card1_button:hover {
+                    @include green_button-hover
                 }
             }
         }
@@ -288,7 +285,6 @@ a .company_name {
     font-size: 40px;
     font-weight: 700;
     color: $main-dark;
-
     margin-bottom: 60px;
 }
 
@@ -411,7 +407,6 @@ a .company_name {
     }
 }
 
-
 //СТАРЫЙ КОД ПЕРЕВЕДЕНЫЙ НА Scss
 
 
@@ -459,9 +454,7 @@ a .company_name {
     }
 
     button:hover {
-        color: $main-gray;
-        outline: 2px solid $main-gray;
-        background-color: unset;
+        @include green_button-hover
     }
 }
 
@@ -722,8 +715,9 @@ a .company_name {
         }
 
         .but_M:hover {
-            color: $main-green;
-            outline: 2px solid $main-green;
+            // color: $main-green;
+            // outline: 2px solid $main-green;
+            @include other_button-hover
         }
 
         .but_Y {
@@ -732,9 +726,10 @@ a .company_name {
         }
 
         .but_Y:hover {
-            color: $main-gray;
-            outline: 2px solid $main-gray;
-            background-color: unset;
+            // color: $main-gray;
+            // outline: 2px solid $main-gray;
+            // background-color: unset;
+            @include green_button-hover
         }
     }
 }
@@ -833,6 +828,10 @@ a .company_name {
                     line-height: 30px;
                     color: $main-green;
                 }
+
+                button:hover {
+                    @include other_button-hover
+                }
             }
         }
     }
@@ -881,6 +880,10 @@ a .company_name {
             .button_container>button {
                 color: #FFFFFF;
                 background-color: $main-green;
+            }
+
+            .button_container>button:hover {
+                @include green_button-hover
             }
         }
     }
@@ -1001,6 +1004,10 @@ a .company_name {
                 font-size: 16px;
                 font-weight: 700;
             }
+
+            button:hover {
+                @include green_button-hover
+            }
         }
 
         span {
@@ -1014,6 +1021,10 @@ a .company_name {
             a {
                 color: #FFFFFF;
                 font-size: 14px;
+            }
+
+            a:hover {
+                @include links
             }
         }
     }
@@ -1098,6 +1109,10 @@ a .company_name {
             li {
                 font-size: 18px;
                 color: $main-gray;
+
+                a:hover {
+                     @include links
+                }
             }
         }
     }
@@ -1110,6 +1125,10 @@ a .company_name {
     line-height: 30px;
     font-size: 18px;
     font-weight: 500;
+
+    a:hover {
+         @include links
+    }
 
     .dot {
         color: $main-gray;
