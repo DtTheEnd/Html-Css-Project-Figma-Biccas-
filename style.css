@@ -73,6 +73,9 @@ header {
   line-height: auto;
   color: #A6A6A6;
 }
+.header_container .header_nav a:hover {
+  color: #54BD95;
+}
 .header_container .header_buttons {
   display: flex;
   gap: 2px;

@@ -12,61 +12,65 @@
     align-items: center;
     gap: 20px;
     margin-inline: auto;
+}
 
-    a .company_name {
-        @include Biccas
+a .company_name {
+    @include Biccas
+}
+
+.header_nav {
+    max-width: 408px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: auto;
+    color: $main-gray;
+
+    a:hover {
+        color: $main-green;
     }
+}
 
-    .header_nav {
-        max-width: 408px;
-        width: 100%;
+.header_buttons {
+    display: flex;
+    gap: 2px;
+
+    .header_button {
+        max-width: 143px;
         display: flex;
-        justify-content: space-between;
-        gap: 40px;
-        flex-wrap: wrap;
+        border-radius: 10px;
         font-size: 16px;
         font-weight: 500;
         line-height: auto;
-        color: $main-gray;
+        padding: 10px;
     }
 
-    .header_buttons {
-        display: flex;
-        gap: 2px;
+    .button_log {
+        color: $main-gray;
+        max-width: 80px;
+    }
 
-        .header_button {
-            max-width: 143px;
-            display: flex;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: auto;
-            padding: 10px;
-        }
+    .button_log:hover {
+        max-width: 80px;
+        color: $main-green;
+        outline: 2px solid $main-green;
+    }
 
-        .button_log {
-            color: $main-gray;
-            max-width: 80px;
-        }
+    .button_sign-up {
+        max-width: 80px;
+        color: #F8F8FA;
+        background-color: $main-green;
+    }
 
-        .button_log:hover {
-            max-width: 80px;
-            color: $main-green;
-            outline: 2px solid $main-green;
-        }
-
-        .button_sign-up {
-            max-width: 80px;
-            color: #F8F8FA;
-            background-color: $main-green;
-        }
-
-        .button_sign-up:hover {
-            max-width: 80px;
-            color: $main-gray;
-            outline: 2px solid $main-gray;
-            background-color: unset;
-        }
+    .button_sign-up:hover {
+        max-width: 80px;
+        color: $main-gray;
+        outline: 2px solid $main-gray;
+        background-color: unset;
     }
 }
 
@@ -77,192 +81,192 @@
     padding-left: 130px;
     padding-right: 18px;
     margin-bottom: 130px;
+}
 
-    .hero_conrainer {
-        margin-inline: auto;
+.hero_conrainer {
+    margin-inline: auto;
+    display: flex;
+    // flex-wrap: wrap;
+    max-width: 1290px;
+    gap: 35px;
+}
+
+.hero_text {
+    max-width: 555px;
+
+    h1 {
+        color: $main-dark;
+        font-size: 80px;
+        line-height: 90px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    svg {
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        padding-right: 94px;
+        margin-bottom: 50px;
+    }
+
+    .hero_buttons {
         display: flex;
-        // flex-wrap: wrap;
-        max-width: 1290px;
-        gap: 35px;
+        gap: 40px;
+        font-size: 18px;
+        align-items: center;
 
-        .hero_text {
-            max-width: 555px;
+        .button_try {
+            background-color: $main-green;
+            color: #FFFFFF;
+            padding: 20px 30px;
+            border-radius: 40px;
+        }
 
-            h1 {
-                color: $main-dark;
-                font-size: 80px;
-                line-height: 90px;
-                font-weight: 700;
-                margin-bottom: 30px;
+        .button_try:hover {
+            color: $main-gray;
+            outline: 2px solid $main-gray;
+            background-color: unset;
+        }
+
+        .button_play {
+            display: flex;
+            max-width: 152px;
+            gap: 14px;
+            align-items: center;
+
+            img {
+                max-width: 40px;
+            }
+        }
+
+        .button_play:hover {
+            color: $main-green;
+            outline: 2px solid $main-green;
+        }
+    }
+}
+
+.hero_image_container {
+    max-width: 702px;
+    padding: 0 112px 0 180px;
+
+    .bg_hero {
+        background-image: url('./assets/images/img_hero.png');
+        width: 410px;
+        height: 526px;
+        margin-bottom: 52px;
+
+        .hero_card1 {
+            position: relative;
+            right: 180px;
+            top: 30px;
+            max-width: 262px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+            padding-left: 18px;
+
+            hr {
+                max-width: 227px;
+                border: none;
+                border-top: 1px solid #EEEEEE;
             }
 
-            svg {
-                margin-bottom: 50px;
-            }
-
-            p {
-                color: #000000;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 30px;
-                padding-right: 94px;
-                margin-bottom: 50px;
-            }
-
-            .hero_buttons {
+            .card1_container {
                 display: flex;
-                gap: 40px;
-                font-size: 18px;
+                gap: 86px;
+                margin-bottom: 5px;
                 align-items: center;
 
-                .button_try {
-                    background-color: $main-green;
-                    color: #FFFFFF;
-                    padding: 20px 30px;
-                    border-radius: 40px;
-                }
+                div {
 
-                .button_try:hover {
-                    color: $main-gray;
-                    outline: 2px solid $main-gray;
-                    background-color: unset;
-                }
+                    h6 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $main-gray2;
+                        margin-bottom: 8px;
+                    }
 
-                .button_play {
-                    display: flex;
-                    max-width: 152px;
-                    gap: 14px;
-                    align-items: center;
-
-                    img {
-                        max-width: 40px;
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
                     }
                 }
 
-                .button_play:hover {
-                    color: $main-green;
-                    outline: 2px solid $main-green;
+                .card1_button {
+                    max-height: 28px;
+                    padding: 6px 16px;
+                    border-radius: 40px;
+                    color: #FFFFFF;
+                    background-color: $main-green;
                 }
             }
         }
 
-        .hero_image_container {
-            max-width: 702px;
-            padding: 0 112px 0 180px;
+        .ic_database {
+            position: relative;
+            bottom: 80;
+            left: 385px;
 
-            .bg_hero {
-                background-image: url('./assets/images/img_hero.png');
-                width: 410px;
-                height: 526px;
-                margin-bottom: 52px;
+        }
 
-                .hero_card1 {
-                    position: relative;
-                    right: 180px;
-                    top: 30px;
-                    max-width: 262px;
-                    background-color: #FFFFFF;
-                    border-radius: 10px;
-                    padding-bottom: 14px;
-                    padding-top: 14px;
-                    padding-left: 18px;
+        .ic_check {
+            position: relative;
+            right: 123px;
+            top: 79px;
+        }
 
-                    hr {
-                        max-width: 227px;
-                        border: none;
-                        border-top: 1px solid #EEEEEE;
+        .img_credcard {
+            position: relative;
+            top: 150px;
+            left: 335px;
+        }
+
+        .hero_card2 {
+            position: relative;
+            right: 100px;
+            top: 30px;
+            max-width: 138px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding-top: 13px;
+            padding-right: 12px;
+            padding-bottom: 14px;
+            padding-left: 12px;
+
+            .card2_container {
+                display: flex;
+                gap: 21px;
+                align-items: end;
+
+                div {
+
+                    h6 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $main-gray2;
+                        margin-bottom: 8px;
                     }
 
-                    .card1_container {
-                        display: flex;
-                        gap: 86px;
-                        margin-bottom: 5px;
-                        align-items: center;
-
-                        div {
-
-                            h6 {
-                                font-size: 12px;
-                                font-weight: 400;
-                                color: $main-gray2;
-                                margin-bottom: 8px;
-                            }
-
-                            span {
-                                font-size: 16px;
-                                font-weight: 500;
-                            }
-                        }
-
-                        .card1_button {
-                            max-height: 28px;
-                            padding: 6px 16px;
-                            border-radius: 40px;
-                            color: #FFFFFF;
-                            background-color: $main-green;
-                        }
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
                     }
-                }
-
-                .ic_database {
-                    position: relative;
-                    bottom: 80;
-                    left: 385px;
-
-                }
-
-                .ic_check {
-                    position: relative;
-                    right: 123px;
-                    top: 79px;
-                }
-
-                .img_credcard {
-                    position: relative;
-                    top: 150px;
-                    left: 335px;
-                }
-
-                .hero_card2 {
-                    position: relative;
-                    right: 100px;
-                    top: 30px;
-                    max-width: 138px;
-                    background-color: #FFFFFF;
-                    border-radius: 10px;
-                    padding-top: 13px;
-                    padding-right: 12px;
-                    padding-bottom: 14px;
-                    padding-left: 12px;
-
-                    .card2_container {
-                        display: flex;
-                        gap: 21px;
-                        align-items: end;
-
-                        div {
-
-                            h6 {
-                                font-size: 12px;
-                                font-weight: 400;
-                                color: $main-gray2;
-                                margin-bottom: 8px;
-                            }
-
-                            span {
-                                font-size: 16px;
-                                font-weight: 500;
-                            }
-                        }
-                    }
-                }
-
-                .ic_message {
-                    position: relative;
-                    top: 80px;
-                    left: 320px;
                 }
             }
+        }
+
+        .ic_message {
+            position: relative;
+            top: 80px;
+            left: 320px;
         }
     }
 }
@@ -271,141 +275,142 @@
 .morethan_section {
     padding: 0 234px 0 130px;
     margin-bottom: 130px;
+}
 
-    .morethan_container {
-        margin-inline: auto;
-        max-width: 1076px;
+.morethan_container {
+    margin-inline: auto;
+    max-width: 1076px;
+}
 
-        .morethan_title {
-            padding-left: 230px;
-            padding-right: 126px;
-            font-size: 40px;
-            font-weight: 700;
-            color: $main-dark;
+.morethan_title {
+    padding-left: 230px;
+    padding-right: 126px;
+    font-size: 40px;
+    font-weight: 700;
+    color: $main-dark;
 
-            margin-bottom: 60px;
-        }
+    margin-bottom: 60px;
+}
 
-        .morethan_companies {
-            display: grid;
-            grid-template-columns: repeat(5, auto);
-            justify-content: space-between;
-            gap: 5px;
+.morethan_companies {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    gap: 5px;
 
-            .mt_company_card {
-                display: flex;
-                gap: 10px;
+    .mt_company_card {
+        display: flex;
+        gap: 10px;
 
-                p {
-                    color: $main-gray;
-                    font-size: 30px;
-                    font-weight: 600;
-                }
-            }
+        p {
+            color: $main-gray;
+            font-size: 30px;
+            font-weight: 600;
         }
     }
 }
+
 
 // /* OUR_SUPPORT */
 .our_support_section {
     background-color: #F9F8FE;
     padding: 60px 130px;
     margin-bottom: 130px;
+}
 
-    .our_support_container {
-        max-width: 1180px;
-        margin-inline: auto;
+.our_support_container {
+    max-width: 1180px;
+    margin-inline: auto;
+    display: flex;
+    gap: 27px;
+}
+
+.oursup_left {
+    max-width: 644px;
+    display: flex;
+    flex-direction: column;
+
+    .oursup_title {
+        color: $main-dark;
+        font-size: 50px;
+        font-weight: 600;
+        padding-right: 27px;
+        margin-bottom: 30px;
+    }
+
+    .oursup_discription {
+        color: $main-gray;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 73px;
+    }
+
+    .oursup_stars {
         display: flex;
-        gap: 27px;
+        gap: 80px;
 
-        .oursup_left {
-            max-width: 644px;
+        .oursup_star {
             display: flex;
             flex-direction: column;
+            gap: 18px;
 
-            .oursup_title {
+            h4 {
                 color: $main-dark;
-                font-size: 50px;
-                font-weight: 600;
-                padding-right: 27px;
-                margin-bottom: 30px;
+                font-size: 18px;
             }
 
-            .oursup_discription {
+            p {
                 color: $main-gray;
-                font-size: 16px;
-                font-weight: 500;
-                margin-bottom: 73px;
-            }
-
-            .oursup_stars {
-                display: flex;
-                gap: 80px;
-
-                .oursup_star {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 18px;
-
-                    h4 {
-                        color: $main-dark;
-                        font-size: 18px;
-                    }
-
-                    p {
-                        color: $main-gray;
-                        font-size: 18px;
-                    }
-                }
-
-            }
-        }
-
-        .oursup_right {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-
-            .oursup_card {
-                display: flex;
-                gap: 30px;
-
-                .oursup_imgs {
-                    padding: 15px;
-                    background-color: #FFFFFF;
-                    max-height: 60px;
-                    box-shadow: $main_shadow;
-                }
-
-                .oursup_card_text {
-                    max-width: 428px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-
-                    h3 {
-                        color: $main-dark;
-                        font-size: 28px;
-                        font-weight: 700;
-                        padding-top: 3px;
-                    }
-
-                    p {
-                        color: $main-gray;
-                        font-size: 18px;
-                        font-weight: 500;
-                    }
-                }
-            }
-
-            .padding1px {
-                padding-left: 1px;
-                // /* он очен важен XDнаверное */
+                font-size: 18px;
             }
         }
 
     }
 }
+
+.oursup_right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .oursup_card {
+        display: flex;
+        gap: 30px;
+
+        .oursup_imgs {
+            padding: 15px;
+            background-color: #FFFFFF;
+            max-height: 60px;
+            box-shadow: $main_shadow;
+        }
+
+        .oursup_card_text {
+            max-width: 428px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+                color: $main-dark;
+                font-size: 28px;
+                font-weight: 700;
+                padding-top: 3px;
+            }
+
+            p {
+                color: $main-gray;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .padding1px {
+        padding-left: 1px;
+        // /* он очен важен XDнаверное */
+    }
+}
+
 
 //СТАРЫЙ КОД ПЕРЕВЕДЕНЫЙ НА Scss
 
@@ -414,81 +419,81 @@
 .our_fearures_section {
     margin-bottom: 130px;
     padding: 0 130px;
+}
 
-    .our_features_container {
-        max-width: 1180px;
-        margin-inline: auto;
+.our_features_container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
 
-        .ourfeat_text {
-            display: flex;
-            //justify-content: space-between; //не работает так как задал размер дочерям
-            gap: 113px;
-            align-items: center;
-            margin-bottom: 74px;
+.ourfeat_text {
+    display: flex;
+    //justify-content: space-between; //не работает так как задал размер дочерям
+    gap: 113px;
+    align-items: center;
+    margin-bottom: 74px;
 
-            h2 {
-                color: $main-dark;
-                font-size: 50px;
+    h2 {
+        color: $main-dark;
+        font-size: 50px;
+        font-weight: 600;
+        max-width: 331px;
+    }
+
+    p {
+        color: $main-gray;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 441px;
+    }
+
+    button {
+        background-color: $main-green;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 18px 31px;
+        border-radius: 70px;
+    }
+
+    button:hover {
+        color: $main-gray;
+        outline: 2px solid $main-gray;
+        background-color: unset;
+    }
+}
+
+.ourfeat_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+
+    .ourfeat_card {
+        max-width: 364px;
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        .ourfeat_card_text {
+            max-width: 340px;
+
+            h3 {
+                font-size: 30px;
+                line-height: 30px;
                 font-weight: 600;
-                max-width: 331px;
+                color: $main-dark;
+                margin-bottom: 20px;
             }
 
             p {
-                color: $main-gray;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 30px;
-                max-width: 441px;
-            }
-
-            button {
-                background-color: $main-green;
-                color: #FFFFFF;
                 font-size: 18px;
                 line-height: 30px;
                 font-weight: 500;
-                padding: 18px 31px;
-                border-radius: 70px;
-            }
-
-            button:hover {
                 color: $main-gray;
-                outline: 2px solid $main-gray;
-                background-color: unset;
-            }
-        }
-
-        .ourfeat_cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 5px;
-
-            .ourfeat_card {
-                max-width: 364px;
-
-                img {
-                    margin-bottom: 30px;
-                }
-
-                .ourfeat_card_text {
-                    max-width: 340px;
-
-                    h3 {
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: 600;
-                        color: $main-dark;
-                        margin-bottom: 20px;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        line-height: 30px;
-                        font-weight: 500;
-                        color: $main-gray;
-                    }
-                }
             }
         }
     }
@@ -499,161 +504,162 @@
     padding-left: 130px;
     padding-right: 61px;
     margin-bottom: 130px;
+}
 
-    .benifit_container {
+.benifit_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1249px;
+    margin-inline: auto;
+    // gap: 135px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.ben_left {
+    max-width: 471px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        color: $main-dark;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .ben_rows {
         display: flex;
-        flex-wrap: wrap;
-        max-width: 1249px;
-        margin-inline: auto;
-        // gap: 135px;
-        gap: 5px;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
 
-        .ben_left {
-            max-width: 471px;
+        .ben_row {
             display: flex;
-            flex-direction: column;
+            gap: 20px;
+            align-items: center;
 
-            h2 {
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
                 color: $main-dark;
-                font-size: 50px;
-                font-weight: 600;
-                margin-bottom: 50px;
-            }
-
-            .ben_rows {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .ben_row {
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-
-                    p {
-                        font-size: 18px;
-                        line-height: 30px;
-                        font-weight: 500;
-                        color: $main-dark;
-                    }
-                }
-            }
-        }
-
-        .ben_right {
-            max-width: 643px;
-            padding: 0 69px 0 124px;
-
-
-            .ben_bg {
-                background-image: url(./assets/images/img_workplace.png);
-                width: 450px;
-                height: 529px;
-                margin-bottom: 14px;
-
-                .ben_card1 {
-                    position: relative;
-                    top: 39px;
-                    right: 124px;
-                    background-color: #FFFFFF;
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    max-width: 304px;
-                    padding: 12px 20px;
-                    box-shadow: $main_shadow;
-
-                    .img_amanda {
-                        padding-right: 16px;
-                    }
-
-                    div {
-                        max-width: 122px;
-
-                        h6 {
-                            color: $main-dark;
-                            font-size: 16px;
-                            font-weight: 500;
-                            margin-bottom: 12px;
-                        }
-
-                        p {
-                            font-size: 12px;
-                            font-weight: 500;
-                            color: $main-gray;
-                        }
-                    }
-
-                    .ic_message {
-                        padding-left: 28px;
-                    }
-                }
-            }
-
-            .ben_card2 {
-                position: relative;
-                top: 39px;
-                left: 381px;
-                max-width: 138px;
-                background-color: #FFFFFF;
-                border-radius: 10px;
-                padding-top: 13px;
-                padding-right: 12px;
-                padding-bottom: 14px;
-                padding-left: 12px;
-                box-shadow: $main_shadow;
-
-                .ben_card2_container {
-                    display: flex;
-                    gap: 21px;
-                    align-items: end;
-
-                    div {
-
-                        h6 {
-                            font-size: 12px;
-                            font-weight: 400;
-                            color: $main-gray2;
-                            margin-bottom: 8px;
-                        }
-
-                        span {
-                            font-size: 16px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-
-            .ic_picture {
-                position: relative;
-                top: 123px;
-                right: 69px;
-            }
-
-            .ben_card3 {
-                position: relative;
-                top: 260px;
-                right: 106px;
-                max-width: 302px;
-                background-color: #FFFFFF;
-                padding: 22px 25px;
-                border-radius: 10px;
-                display: flex;
-                gap: 15px;
-                align-items: center;
-                box-shadow: $main_shadow;
-
-                p {
-                    font-size: 18px;
-                    color: $main-dark;
-                    letter-spacing: -1px; //В Figma было -3% letter spacing как это реалезовать ?
-                }
             }
         }
     }
 }
+
+.ben_right {
+    max-width: 643px;
+    padding: 0 69px 0 124px;
+
+
+    .ben_bg {
+        background-image: url(./assets/images/img_workplace.png);
+        width: 450px;
+        height: 529px;
+        margin-bottom: 14px;
+
+        .ben_card1 {
+            position: relative;
+            top: 39px;
+            right: 124px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            max-width: 304px;
+            padding: 12px 20px;
+            box-shadow: $main_shadow;
+
+            .img_amanda {
+                padding-right: 16px;
+            }
+
+            div {
+                max-width: 122px;
+
+                h6 {
+                    color: $main-dark;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $main-gray;
+                }
+            }
+
+            .ic_message {
+                padding-left: 28px;
+            }
+        }
+    }
+
+    .ben_card2 {
+        position: relative;
+        top: 39px;
+        left: 381px;
+        max-width: 138px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding-top: 13px;
+        padding-right: 12px;
+        padding-bottom: 14px;
+        padding-left: 12px;
+        box-shadow: $main_shadow;
+
+        .ben_card2_container {
+            display: flex;
+            gap: 21px;
+            align-items: end;
+
+            div {
+
+                h6 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $main-gray2;
+                    margin-bottom: 8px;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .ic_picture {
+        position: relative;
+        top: 123px;
+        right: 69px;
+    }
+
+    .ben_card3 {
+        position: relative;
+        top: 260px;
+        right: 106px;
+        max-width: 302px;
+        background-color: #FFFFFF;
+        padding: 22px 25px;
+        border-radius: 10px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        box-shadow: $main_shadow;
+
+        p {
+            font-size: 18px;
+            color: $main-dark;
+            letter-spacing: -1px; //В Figma было -3% letter spacing как это реалезовать ?
+        }
+    }
+}
+
 
 // CHOOSE PLAN
 
@@ -661,235 +667,230 @@
     padding-left: 141px;
     padding-right: 119px;
     margin-bottom: 131px;
+}
 
-    .plan_container {
-        max-width: 1180px;
+.plan_container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+.plan_text {
+    max-width: 519px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 67px;
+
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: $main-dark;
+        line-height: 73px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        color: $main-gray;
+        margin-bottom: 40px;
+    }
+
+    .plan_buttons_bil {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        gap: 1px;
+        justify-content: center;
+        padding: 6px; //хотя должно быть 7px
+        background-color: #FFFFFF;
+        border-radius: 10px;
         margin-inline: auto;
-
-        .plan_text {
-            max-width: 519px;
-            text-align: center;
-            margin-inline: auto;
-            margin-bottom: 67px;
-
-            h2 {
-                font-size: 50px;
-                font-weight: 700;
-                color: $main-dark;
-                line-height: 73px;
-                margin-bottom: 40px;
-            }
-
-            p {
-                font-size: 18px;
-                font-weight: 700;
-                color: $main-gray;
-                margin-bottom: 40px;
-            }
-
-            .plan_buttons_bil {
-                display: flex;
-                flex-wrap: nowrap;
-                flex-shrink: 0;
-                gap: 1px;
-                justify-content: center;
-                padding: 6px; //хотя должно быть 7px
-                background-color: #FFFFFF;
-                border-radius: 10px;
-                margin-inline: auto;
-                box-shadow: $main_shadow;
-                max-width: 349px; // хотя должно быть 340px
+        box-shadow: $main_shadow;
+        max-width: 349px; // хотя должно быть 340px
 
 
-                button {
-                    border-radius: 10px;
-                    padding: 13px 40px;
-                    line-height: 30px;
-                    font-size: 18px;
-                    font-weight: 600;
-                }
-
-                .but_M {
-                    color: $main-dark;
-                }
-
-                .but_M:hover {
-                    color: $main-green;
-                    outline: 2px solid $main-green;
-                }
-
-                .but_Y {
-                    color: #FFFFFF;
-                    background-color: $main-green;
-                }
-
-                .but_Y:hover {
-                    color: $main-gray;
-                    outline: 2px solid $main-gray;
-                    background-color: unset;
-                }
-            }
+        button {
+            border-radius: 10px;
+            padding: 13px 40px;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 600;
         }
 
-        .plan_cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 29px;
-            align-items: center;
+        .but_M {
+            color: $main-dark;
+        }
 
+        .but_M:hover {
+            color: $main-green;
+            outline: 2px solid $main-green;
+        }
 
-            .plan_card {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                max-width: 374px;
-                padding: 0 20px 25px 20px;
-                box-shadow: $main_shadow;
-                border-radius: 20px;
+        .but_Y {
+            color: #FFFFFF;
+            background-color: $main-green;
+        }
 
-                .pl_card_text {
-                    max-width: 210px;
-                    text-align: center;
-                    padding-top: 40px;
-                    padding-inline: auto;
-                    margin-bottom: 30px;
-
-                    h4 {
-                        font-size: 30px;
-                        font-weight: 600;
-                        color: $main-dark;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        font-weight: 500;
-                        color: $main-gray;
-                        line-height: 27px;
-                        margin-bottom: 13px;
-                    }
-
-                    .dollar {
-                        position: relative;
-                        right: 20px; // Ну допустим
-                        line-height: 27px;
-                        margin-bottom: unset;
-                    }
-
-                    h3 {
-                        position: relative;
-                        left: 5px; // Ну допустим
-                        font-size: 50px;
-                        font-weight: 600;
-                        line-height: 30px;
-                    }
-
-                }
-
-                .pl_card_points {
-                    background-color: #F9FAFB;
-                    max-width: 334px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 22px;
-                    padding-top: 26px;
-                    padding-left: 37px;
-                    padding-right: 31px;
-                    border-radius: 10px;
-
-
-                    .point_row {
-                        display: flex;
-                        gap: 10px;
-
-                        p {
-                            font-size: 18px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            color: $main-dark;
-                        }
-                    }
-
-                    .button_container {
-                        display: flex;
-                        justify-content: center;
-
-                        button {
-                            padding: 17px 65px;
-                            background-color: #FFFFFF;
-                            border-radius: 20px;
-                            box-shadow: $main_shadow;
-                            margin-bottom: 25px;
-                            font-size: 18px;
-                            font-weight: 600;
-                            line-height: 30px;
-                            color: $main-green;
-                        }
-                    }
-                }
-            }
-
-            .card_pro {
-                background-image: url('./assets/images/background_card-pro.svg');
-                background-repeat: no-repeat;
-                padding-inline: 20px;
-                padding-bottom: 24px;
-
-                .pl_card_text {
-                    margin-bottom: 15px;
-                    max-width: 200px;
-
-                    h4,
-                    p,
-                    h3 {
-                        color: #FFFFFF;
-                    }
-
-                    h3 {
-                        margin-bottom: 16px;
-                    }
-                }
-
-                span {
-                    display: flex;
-                    justify-content: center;
-
-                    .save50 {
-                        background-color: #85DAB9;
-                        border-radius: 10px;
-                        font-size: 14px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: #FFFFFF;
-                        padding: 5px 10px;
-                        max-width: 130px;
-                        margin-bottom: unset;
-                    }
-                }
-
-                .pl_card_points {
-                    background-color: #FFFFFF;
-
-                    .button_container>button {
-                        color: #FFFFFF;
-                        background-color: $main-green;
-                    }
-                }
-            }
-
-            .card_buisness>.pl_card_text {
-                max-width: 251px;
-            }
+        .but_Y:hover {
+            color: $main-gray;
+            outline: 2px solid $main-gray;
+            background-color: unset;
         }
     }
 }
 
-// FOOTER
-footer {
-    background-color: #161C28;
-    padding: 130px;
-    padding-bottom: 40px;
+.plan_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    align-items: center;
+
+
+    .plan_card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 374px;
+        padding: 0 20px 25px 20px;
+        box-shadow: $main_shadow;
+        border-radius: 20px;
+
+        .pl_card_text {
+            max-width: 210px;
+            text-align: center;
+            padding-top: 40px;
+            padding-inline: auto;
+            margin-bottom: 30px;
+
+            h4 {
+                font-size: 30px;
+                font-weight: 600;
+                color: $main-dark;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: $main-gray;
+                line-height: 27px;
+                margin-bottom: 13px;
+            }
+
+            .dollar {
+                position: relative;
+                right: 20px; // Ну допустим
+                line-height: 27px;
+                margin-bottom: unset;
+            }
+
+            h3 {
+                position: relative;
+                left: 5px; // Ну допустим
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+
+        }
+
+        .pl_card_points {
+            background-color: #F9FAFB;
+            max-width: 334px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            padding-top: 26px;
+            padding-left: 37px;
+            padding-right: 31px;
+            border-radius: 10px;
+
+
+            .point_row {
+                display: flex;
+                gap: 10px;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: $main-dark;
+                }
+            }
+
+            .button_container {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    padding: 17px 65px;
+                    background-color: #FFFFFF;
+                    border-radius: 20px;
+                    box-shadow: $main_shadow;
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $main-green;
+                }
+            }
+        }
+    }
+
+    .card_pro {
+        background-image: url('./assets/images/background_card-pro.svg');
+        background-repeat: no-repeat;
+        padding-inline: 20px;
+        padding-bottom: 24px;
+
+        .pl_card_text {
+            margin-bottom: 15px;
+            max-width: 200px;
+
+            h4,
+            p,
+            h3 {
+                color: #FFFFFF;
+            }
+
+            h3 {
+                margin-bottom: 16px;
+            }
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+
+            .save50 {
+                background-color: #85DAB9;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 30px;
+                color: #FFFFFF;
+                padding: 5px 10px;
+                max-width: 130px;
+                margin-bottom: unset;
+            }
+        }
+
+        .pl_card_points {
+            background-color: #FFFFFF;
+
+            .button_container>button {
+                color: #FFFFFF;
+                background-color: $main-green;
+            }
+        }
+    }
+
+    .card_buisness>.pl_card_text {
+        max-width: 251px;
+    }
 }
+
+// FOOTER
 
 .footer_section {
     max-width: 1180px;
@@ -1052,7 +1053,7 @@ footer {
             line-height: 30px;
             color: $main-gray;
             max-width: 456px; //Вообще 410px но тут костыли с кнопкой
-            
+
 
             input {
                 padding-left: 20px;
@@ -1074,13 +1075,13 @@ footer {
             }
         }
     }
-    
+
     .links {
         max-width: 587px;
         display: flex;
         justify-content: space-between;
         gap: 64px;
-        
+
 
         h5 {
             margin-bottom: 30px;
