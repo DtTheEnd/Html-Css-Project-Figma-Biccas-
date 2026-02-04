@@ -68,6 +68,19 @@ a .company_name {
         @include green_button-hover
     }
 }
+.header-burger-menu-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: $main-green;
+    border-radius: 4px;
+    cursor: pointer;
+
+    display: none;
+}
 
 // /* MAIN */
 // /* HERO */
@@ -77,10 +90,9 @@ a .company_name {
     margin-bottom: 130px;
 }
 
-.hero_conrainer {
+.hero_container {
     margin-inline: auto;
     display: flex;
-    // flex-wrap: wrap;
     max-width: 1290px;
     gap: 35px;
 }
@@ -1032,7 +1044,7 @@ a .company_name {
 
 .footer_container2 {
     display: flex;
-    // gap: 5px;
+    gap: 15px;
     justify-content: space-between;
     max-width: 1154px;
     padding-right: 26px;
@@ -1135,3 +1147,6 @@ a .company_name {
         font-size: 14px;
     }
 }
+
+
+@import 'mediascreen';

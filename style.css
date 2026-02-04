@@ -126,13 +126,26 @@ a .company_name {
   outline: 2px solid #54BD95;
 }
 
+.header-burger-menu-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #54BD95;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
 .hero_section {
   padding-left: 130px;
   padding-right: 18px;
   margin-bottom: 130px;
 }
 
-.hero_conrainer {
+.hero_container {
   margin-inline: auto;
   display: flex;
   max-width: 1290px;
@@ -949,6 +962,7 @@ a .company_name {
 
 .footer_container2 {
   display: flex;
+  gap: 15px;
   justify-content: space-between;
   max-width: 1154px;
   padding-right: 26px;
@@ -1039,4 +1053,108 @@ a .company_name {
 .footer_container3 .dot {
   color: #A6A6A6;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1390px) {
+  .hero_container {
+    flex-direction: row-reverse;
+    align-content: center;
+    gap: 0;
+    justify-content: center;
+  }
+  .hero_text {
+    position: relative;
+    z-index: 1;
+    right: 100px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .hero_image_container {
+    position: relative;
+    z-index: 0;
+    left: 100px;
+  }
+  .ourfeat_cards,
+  .benifit_container,
+  .plan_cards,
+  .plan_cards,
+  .footer_container1 {
+    justify-content: center;
+  }
+  .our_support_container {
+    flex-wrap: wrap;
+  }
+  .ourfeat_text {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .hero_section {
+    padding-left: 18px;
+  }
+  .hero_text {
+    right: 220px;
+  }
+  .hero_image_container {
+    left: 220px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .morethan_section {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .morethan_title {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .morethan_companies {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header-burger-menu-button {
+    display: flex;
+  }
+  .header_buttons,
+  .header_nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .morethan_companies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero_image_container {
+    display: none;
+  }
+  .hero_text {
+    right: 0;
+  }
+  .morethan_companies {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 720px) {
+  .benifit_section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 643px) {
+  .ben_right {
+    display: none;
+  }
+}
+@media screen and (max-width: 563px) {
+  .start_form {
+    padding-right: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
